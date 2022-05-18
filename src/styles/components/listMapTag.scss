@@ -1,0 +1,31 @@
+
+
+.listTagMap{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    width: calc(100% * 3);
+
+    &__el{
+        width: 100%;
+        min-width: 330px;
+        height: 68px;
+        background: $bg;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 11px 33px;
+        align-items: center;
+        justify-items: center;
+        margin: 0 14px;
+
+        &>p:nth-child(2){
+            width: 167px;
+            color: #00000070;
+        }
+
+
+    }
+}

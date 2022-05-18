@@ -1,0 +1,51 @@
+
+
+.head{
+    width: calc(100vw - 76px);
+    height: 60px;
+    margin: 8px 38px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $mauve;
+
+    &__logo{
+        font-family: "basement";
+        font-size:21px ;
+        font-weight: 800;
+        line-height: 100%;
+        color: $mauve;
+    }
+    &__nav{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+       z-index: 9999;
+        width: 100vw;
+        border-top: 1px solid $mauve;
+
+    }
+    &__link{
+        display: block;
+        height: 41px;
+        width: 120px;
+        border-radius: 5px;
+        padding: 8px 0;
+        background-color: $mauve;
+        font-family: "RobotoMono";
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 80%;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover{
+            transition: 0.3s;
+            background-color: #452370;
+        }
+
+    }
+}

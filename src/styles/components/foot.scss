@@ -1,0 +1,61 @@
+
+
+.foot{
+    width: 100%;
+    padding: 51px 9vw 98px 9vw;
+    background-color: $bgGris;
+
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       
+
+
+        &--pseudo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+           
+        }
+    }
+    &__box{
+
+        &:nth-child(2){
+            margin: 91px 0;
+        }
+    }
+
+    &__el{
+
+        &--second{
+            
+                margin: 7px 0;
+            
+        }
+    }
+    &__link{
+        font-family: "basement";
+        font-size: 21px;
+        font-weight: 800;
+        line-height: 120%;
+        margin: 14px 0;
+        transition: 0.3s;
+        color: $text;
+
+        &:hover{
+            transition: 0.3s;
+            transform: translateX(10%);
+            color: #00000080;
+        }
+        &:checked{
+            color: $mauve;
+
+        }
+    }
+    &__date{
+        text-align: center;
+    }
+}

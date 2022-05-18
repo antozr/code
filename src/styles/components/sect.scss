@@ -1,0 +1,144 @@
+.sect {
+    width: 100vw;
+    padding: 0 9vw;
+
+
+
+    &__txt {
+        font-family: "RobotoMono";
+        font-size: 16px;
+        font-weight: 400;
+        color: $text;
+        line-height: 160%;
+        margin: 21px 0;
+        max-width: 80ch;
+
+    }
+
+    &__title {
+        font-family: "basement";
+        font-size: 38px;
+        font-weight: 800;
+        line-height: 120%;
+        margin: 28px 0;
+
+        &--2 {
+            font-size: 28px;
+        }
+
+        &--3 {
+            font-size: 21px;
+        }
+
+        &--4 {
+            font-size: 18px;
+        }
+    }
+
+    &__link {
+        font-family: "RobotoMono";
+        width: 290px;
+        font-size: 21px;
+        font-weight: 800;
+        color: $text;
+        line-height: 90%;
+        padding: 16px 28px;
+        border: 1px solid $mauve;
+        border-radius: 5px;
+        margin: 28px auto;
+        display: flex;
+        justify-content: center;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: $mauve;
+            transition: 0.3s;
+            font-weight: 400;
+
+            &>span {
+                color: #fff;
+            }
+        }
+
+        &--big{
+            width: 100vw;
+            margin: 28px 0 28px -9vw;
+
+        }
+    }
+
+    &--bgGris {
+        padding: 153px 9vw;
+        background-color: $bgGris;
+        margin: 153px 0;
+
+    }
+
+    &__imgBox {
+        height: 420px;
+        width: auto;
+        position: relative;
+        margin: 57px 0;
+        display: flex;
+        justify-content: center;
+
+        &>img {
+            width: 250px;
+            height: 100%;
+
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 246px;
+            height: 461px;
+            background-color: transparent;
+            border-radius: 30px;
+            position: absolute;
+            top: -20px;
+            left: 0px;
+
+            border: 2px solid #984EFA30;
+            transform: translate(17%);
+
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            width: 212px;
+            height: 438px;
+            background-color: transparent;
+            border-radius: 20px;
+            position: absolute;
+            top: -10px;
+            left: 17px;
+            border: 2px solid #984EFA60;
+            transform: translate(21%);
+
+
+        }
+
+    }
+
+    &sect__boxContenut {
+        width: 100%;
+        height: auto;
+
+    }
+
+
+    &__listTagMap {
+        width: 100vw;
+        height: 68px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        margin: 28px 0 28px -9vw;
+    }
+
+    &--end{
+        margin: 221px 0;
+    }
+}
