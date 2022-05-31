@@ -1,0 +1,16 @@
+
+
+.case{
+
+    &__box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+
+        &>p{
+            max-width: 55ch;
+        }
+    }
+}

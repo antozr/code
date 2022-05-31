@@ -57,3 +57,16 @@
         scroll-behavior: smooth;
     }
 }
+
+
+
+@media(min-width: 900px){
+
+   .nav{
+    &__list{
+        padding: 0 ;
+        background-color: transparent;
+}
+   }
+    
+}

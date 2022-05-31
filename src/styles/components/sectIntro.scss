@@ -74,3 +74,16 @@
         
     }
 }
+
+
+
+@media(min-width: 900px){
+
+    .sect{
+        &--intro{
+            overflow-x: hidden;
+            margin: 260px auto;
+        }
+    
+    }
+ }

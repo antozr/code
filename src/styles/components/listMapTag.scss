@@ -6,8 +6,9 @@
     overflow-x: scroll;
     justify-content: flex-start;
     width: calc(100% * 3);
-
+   
     &__el{
+        animation: moveBox 6s infinite;
         width: 100%;
         min-width: 330px;
         height: 68px;
@@ -21,6 +22,9 @@
         justify-items: center;
         margin: 0 14px;
 
+        &:nth-child(2){
+            animation: infinite changeColor  6s;
+        }
         &>p:nth-child(2){
             width: 167px;
             color: #00000070;
@@ -28,4 +32,55 @@
 
 
     }
+}
+
+@keyframes moveBox{
+    from{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(-100%);
+    }
+    60%{
+        transform: translateX(-80%);
+    }
+    90%{
+        transform: translateX(-200%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes changeColor{
+    from{
+        background-color: #fff;
+        transform: translateX(0);
+        border: 0px solid #984EFA00;
+    }
+    20%{
+        transform: translateX(-100%);
+    }
+    30%{
+        background-color: #984EFA20;
+        
+    }
+    
+    60%{
+        transform: translateX(-80%);
+    }
+    80%{
+        background-color: #984EFA40;
+        border: 1px solid #984EFA;
+    }
+    90%{
+        transform: translateX(-200%);
+    }
+    to{
+        background-color: #fff;
+        transform: translateX(0);
+        border: 0px solid #984EFA00;
+    }
+
+
 }

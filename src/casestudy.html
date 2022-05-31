@@ -2,32 +2,32 @@
 <html lang="fr">
 
 <head>
-  <title>CardChange / gestionnaire & echange de carte </title>
+  <title>Case-Study / CardChange</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="icon" href="./assets/images/icon.ico" />
 
   <meta name="description"
-    content="Bienvenue dans la landing page de mon application de gestion de carte des différentes licences ainsi qu’une possibilité de les échanger pour voir les possibilités sur une carte. Et le petit plus, des conseils pour découvrir si tu as une vraie carte. 😄">
+    content="Bienvenu dans se case-study, tu vas découvrir le déroulement de mon aventure pour la création de mon tfa. 😄">
   <meta name="keywords" content="cardchange, cardChange, dbs, pokémon, anto_dev, landing page, tfa" />
   <meta name="author" content="anto__dev" />
   <meta name="copyright" content="propriétaire du copyright" />
 
   <!-- Meta Partage -->
   <!-- Twitter Card data -->
-  <meta name="twitter:card" content="Home Antodev👺">
+  <meta name="twitter:card" content="Case-Study / CardChange">
   <meta name="twitter:site" content="http://antoni-dumont.be/">
   <meta name="twitter:creator" content="@AntoniDumont">
-  <meta name="twitter:title" content="CardChange / gestionnaire & echange de carte">
+  <meta name="twitter:title" content="Crédits / CardChange">
   <meta name="twitter:description"
-    content="Bienvenue dans la landing page de mon application de gestion de carte des différentes licences ainsi qu’une possibilité de les échanger pour voir les possibilités sur une carte. Et le petit plus, des conseils pour découvrir si tu as une vraie carte. 😄 ">
+    content="Bienvenu dans se case-study, tu vas découvrir le déroulement de mon aventure pour la création de mon tfa.  ">
   <!-- Twitter summary card with large image must be at least 280x150px -->
   <meta name="twitter:image" content=" http://antoni-dumont.be/assets/images/partage.png">
   <!-- Open Graph data -->
-  <meta property="og:site_name" content="Home Antodev👺" />
-  <meta property="og:title" content="CardChange / gestionnaire & echange de carte" />
+  <meta property="og:site_name" content="Crédits / CardChange" />
+  <meta property="og:title" content="Case-Study / CardChange" />
   <meta property="og:description"
-    content="Bienvenue dans la landing page de mon application de gestion de carte des différentes licences ainsi qu’une possibilité de les échanger pour voir les possibilités sur une carte. Et le petit plus, des conseils pour découvrir si tu as une vraie carte. 😄 " />
+    content="Bienvenu dans se case-study, tu vas découvrir le déroulement de mon aventure pour la création de mon tfa.  " />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://antoni-dumont.be/ " />
   <meta property="og:image" content=" http:/antoni-dumont.be/assets/images/partage.png" />
@@ -45,15 +45,15 @@
 <body>
 
   <header class="head">
-    <p class="head__logo">
+    <a href="index.html" class="head__logo">
       CC
-    </p>
+    </a>
 
     <nav class="head__nav">
       <ul class="nav__list">
-        <li class="nav__el"><a href="#gestion" class="nav__lien">Le gestionnaire</a></li>
-        <li class="nav__el"><a href="#vendre" class="nav__lien">Vendre <span>?</span> </a></li>
-        <li class="nav__el"><a href="#securite" class="nav__lien">La sécurité</a></li>
+        <li class="nav__el"><a href="#idee" class="nav__lien">L'idée </a></li>
+        <li class="nav__el"><a href="#reponse" class="nav__lien">Réponse <span>?</span> </a></li>
+        <li class="nav__el"><a href="#mvp" class="nav__lien">Le MVP</a></li>
       </ul>
     </nav>
     <a href="#" class="head__link">
@@ -74,37 +74,93 @@
           class="sect__imgIntro" loading="lazy">
       </div>
       <h1 class="sect__title">
-        Un gestionnaire porteur de conseils
+        Un case-study , une aventure totale
       </h1>
       <p class="sect__txt">
-        Pour donner à chaque possesseur de carte, comme toi, une possibilité d’avoir toutes les licences au même
-        endroits.
-        On mise sur la confiance mais avec notre petit plus. 😉
+        Je vais vous conter l’histoire de ce projet, mon projet CardChange, qui est une aventure qui à durer plusieurs
+        semaines et qui c’est jouer comme un roller-coster à certains moments. Mais ce que j’en retiens c’est un
+        apprentissage constant, grâce à des remises en questions et des conseils avisé de camarade. Ainsi j’ai pu mener
+        mon projet à bon port et vous présenter son déroulement. 😉
       </p>
-      <p class="sect__txt">
-        Découvre comment on te propose des solutions pour détecter les fausses cartes dans tes échanges.🔒
-      </p>
+
     </section>
 
+    <section class="sect sect__case">
+      <div class="sect__anchor" id="idee"></div>
+      <h2 class="sect__title sect__title--2">
+        L’idée :
+      </h2>
+      <p class="sect__txt">
+        <i> Pourquoi ?</i> Pourquoi avoir choisi ce sujet ? Je voulais apporter une solution autour d’un problème que
+        moi ainsi
+        que d’autre personne de la communauté, des processeurs de cartes, ont eu. C’est la gestion de nos collections,
+        qui n’est pas une problématique nouvelle, il y a déjà des solutions mais ces solutions ont aussi des problèmes.
+        Ainsi tu vas découvrir comment je sors ma solution de cet océan de site et application qui tourne autour d’un
+        univers, mais allons plus loin dans ces multivers.
+      </p>
+      <p class="sect__txt">
+        Mais ce que j’ai vécu n’est pas une histoire sordide, mais une histoire comparable à la trame des jeux Pokémon
+        ou yo-gi-oh, où mon but est toujours de récupérer toutes les cartes qui sont disponible sur le marché. Mais ici
+        depuis le début de mon aventure j’ai pu avoir entre mes mains plus de 300 cartes et il doit m’en rester 200 dans
+        mes rangements et comme je les veux toutes, il me faut un listing de toutes mes cartes.
+      </p>
+      <p class="sect__txt sect__txt--italic">
+        Mais comme j’ai plusieurs licences, le fait de vouloir faire mes listings en lignes, il me faut plusieurs sites,
+        application et c’est chronophage, alors le plus simple c’est un fichier Notion, mais c’est long et chiants à
+        faire. Donc comment faire pour améliorer les solutions qui sont déjà disponible ?
+      </p>
+      <div class="case__box">
+        <p class="sect__txt">
+          Comme on peut le voir, le sujet que j’ai choisi est établie mais est commun à beaucoup, car petit on est
+          beaucoup à avoir eu des cartes à collectionner. Et certains, comme moi on les collectionne toujours, pour
+          différentes raisons, mais on en a un paquet et on a besoin d’un listing précis pour suivre notre collection.
+          Et quand on joue sur plusieurs collections, il faut du courage pour passer d’un site, à une application, à un
+          autre site pour suivre chaque collection.
+        </p>
+        <p class="sect__txt">
+          <b>Mon Hypothèse :</b> Je pense qu’une application de gestion de carte global, sur les licences, peut
+          intéresser les
+          utilisateurs, pour ce faire , je saurais si je suis sur la bonne voie si je vérifie que mes utilisateurs
+          ajoutent des cartes et se dirige vers les conseils .
+        </p>
+      </div>
+    </section>
+
+
     <section class="sect sect--bgGris">
-      <div class="sect__anchor" id="gestion"></div>
-      <div class="sect__boxContenut">
+      <div class="case__contenutGris">
+        <div class="sect__anchor" id="reponse"></div>
         <h2 class="sect__title sect__title--2">
-          Voici un gestionnaire , simple et facile
+          La création de la réponse :
         </h2>
-        <p class="sect__txt">Comme tous collectionneurs, on aime savoir ce qu’on a dans notre inventaire en un simple
-          coup d’oeuil et surtout de pouvoir le consulter n’importe où, n’importe quand.</p>
-        <p class="sect__txt">C’est pourquoi, avec CardChange, tu peux rajouter tes cartes de tes licences entre les 5
-          plus grandes du marché.
-          En ayant un aperçus en un clin d’oeuil ainsi que l’ajout grâce à la photo de tes cartes. </p>
+        <p class="sect__txt">
+          Mes préjugés ? Pour aller vers ma solution, j’ai comme préjuger le fait que ce qui existe n’est pas
+          satisfassent, les programmes ont un design assez vieux, mal optimisé mais aussi, une indisponibilité d’avoir
+          ces services en lignes, pour avoir son listing partout, tout le temps. Voici donc en gros ce que j’avais en
+          tête pour créer mon projet. Ainsi avec mes idées, j’ai pu avancer et aller confronter mes idées à ceux de mes
+          utilisateurs.
+        </p>
+        <p class="sect__txt">
+          Mon premier contact avec les utilisateurs, afin de voir si mes préjugés, avaient une valeur auprès de mon
+          public, pour vérifier si oui ou non je devais modifier mon sujet. Donc voici ma première aventure en milieu
+          des possesseurs de cartes. Que le duel commence !!
+          J’ai rencontré différentes personnes d’âge différents (de 18 ans à 40 ans), qui sont dans le domaine des
+          cartes à jouer depuis plusieurs voir dizaine d’année. Ainsi j’ai pu discuter avec eux de comment ils
+          consomment les cartes, comment ils gèrent leur collections, s’ils ont plusieurs licences ou pas mais aussi
+          s’ils participent à des tournois, ou bien des rencontres dans des lieux d’échange, des magasins spécialisés.
+        </p>
+        <p class="sect__txt sect__txt--italic">
+          J’ai pu avoir comme retours à mes questions du positif, que leurs réponses allaient dans mon sens qu’il y
+          avait peu de gestionnaire en ligne qui sont vraiment efficaces, car ce qu’ils utilisent est une liste fait sur
+          un tableur, car le plus simple à prendre en main et à avoir partout avec soi. Ces réponses mon conforté dans
+          mon idée de faire ce gestionnaire en ligne multi-licence, qui reprendrait les points positifs de ceux
+          existants et remplacerait les moins performant (enfin viendrait leur faire de la concurrence).
+          Et les points négatifs, c’est que je traite un sujet assez commun et qu’il me faut un point qui me démarquera
+          de la concurrence. Pour ce faire, suite à nos discussions le thème de la sécurité est là, mais comment je vais
+          le traité ?
+        </p>
 
-        <div class="sect__imgBox" id="boxImgOne">
-          <img src="./assets/images/imgGestion.png"
-            alt="Une représentation de la phase de la gestion de l'application. "
-            srcset="./assets/images/imgGestion@2x.png" class="sect__img sect__img--anim" loading="lazy">
 
-        </div>
-        <a href="" class="sect__link">Envie d'essayer&nbsp;<span>?</span> </a>
       </div>
       <div class="sect__animText">
         <div id="animTextBig">
@@ -115,104 +171,36 @@
           </p>
         </div>
       </div>
-
-      <div class="sect__boxContenut">
-        <div class="sect__anchor" id="vendre"></div>
+      <div class="case__contenutGris">
+        <div class="sect__anchor" id="mvp"></div>
         <h2 class="sect__title sect__title--2">
-          Trop de cartes ?
-          Une envie précise ?
+          Ma réponse, un MVP
         </h2>
         <p class="sect__txt">
-          Tu les collectionnes, et comme toutes collection à un moment on manque de place. Et bien, pour remédier à ce
-          problème je peux te donner une solution. Te permettre de vendre tes cartes à d’autres collectionneurs près de
-          chez toi ou bien un peux plus loin. Simple et efficaces.
+          Donc comme première idée pour mon MVP, je commence par faire un audit de plusieurs applications ainsi que site
+          qui propose mon service un peu de visualiser les fonctionnalités qui fonctionne chez les autres pour commencer
+          avec le même niveau dans mon MVP. J’ai traité plusieurs sites que vous pouvez voir dans les captures d’écrans,
+          pour le site de DBSCard : j’ai pu relever comme point positif dans son dispositif un dashboard qui reprend
+          tous les éléments importants de l’utilisateur sans trop de fouillis et en mettant en avant ce qui se passe
+          dans la communauté ( avec les hausse et chutes de prix sur l’ensemble des cartes du marché). Quand on cherche
+          une carte on passe soit par la barre de recherche ou bien par la liste des séries puis par le défilement des
+          cartes, ce qui fonctionne et comme c’est un gestionnaire, on peut directement mettre le fait qu’on ajoute une
+          carte à notre collection. Mais le couac c’est qu’il est impossible j’ajoute plusieurs cartes à la fois, pour
+          ce faire on est obligé de cliquer sur la carte, ce qui nous renvois sur la page de la carte et de là on peut
+          ajouter le nombres qu’on veut. Ce qui ralentit l’utilisateur dans ses actions et puis lui couper l’envie de
+          continuer.
         </p>
-        <h3 class="sect__title sect__title--3">
-          En acheter ?
-        </h3>
         <p class="sect__txt">
-          La passion de tous les avoirs ou de récupérer la dernière carte qu’il te manque. Ainsi avec la map tu peux y
-          naviguer pour trouver ce que tu veux près de chez toi. Ou visiter le market pour acheter ta carte manquante.
+        
         </p>
-        <div class="sect__imgBox">
-          <img src="./assets/images/min/map.webp" alt="Une représentation de la phase de la gestion de l'application. "
-            srcset="./assets/images/min/map@2x.webp" class="sect__img" loading="lazy" />
-        </div>
-        <div class="sect__listTagMap">
-          <ul class="listTagMap">
-            <li class="listTagMap__el">
-              <p class="sect__title sect__title--4">
-                Marc
-              </p>
-              <p class="sect__txt">
-                Voir ces cartes
-                mise en ventes
-              </p>
-            </li>
-            <li class="listTagMap__el">
-              <p class="sect__title sect__title--4">
-                Marc
-              </p>
-              <p class="sect__txt">
-                Voir ces cartes
-                mise en ventes
-              </p>
-            </li>
-            <li class="listTagMap__el">
-              <p class="sect__title sect__title--4">
-                Marc
-              </p>
-              <p class="sect__txt">
-                Voir ces cartes
-                mise en ventes
-              </p>
-            </li>
-          </ul>
-        </div>
-        <a href="" class="sect__link">Envie d'essayer&nbsp;<span>?</span> </a>
+        <p class="sect__txt sect__txt--italic">
+         
+        </p>
+
+
       </div>
     </section>
 
-    <!--section sur la sécurité retour bg blanc-->
-
-    <section class="sect sect--secu">
-      <div class="sect__anchor" id="securite"></div>
-      <h2 class="sect__title sect__title--2">
-        La sécurité notre priorité
-      </h2>
-      <p class="sect__txt">
-        Tu as peut-être déjà eu envie d’acheter des cartes en lignes, ou bien de faire des échanges avec des
-        particuliers, mais tu as eu des doutes avec la couleur, le nom sur la carte ou bien même l’image sur la carte.
-        Car le marché des fausses cartes et bel et bien présent chez nous et représentes une part du marché. Mais
-        comment toi tu peux faire pour ne pas tomber dans ces arnaques ?
-        Et bien CardChange te propose des conseils pour détecter une fausse cartes, avec des explications simples pour
-        détecter au plus vite la fraud
-
-
-
-      </p>
-      <div class="sect__imgBox">
-        <img src="./assets/images/min/imgGestion.webp"
-          alt="Une représentation de la phase de la gestion de l'application. "
-          srcset="./assets/images/min/imgGestion@2x.webp" class="sect__img" loading="lazy">
-
-      </div>
-      <a href="" class="sect__link">Envie d'essayer&nbsp;<span>?</span> </a>
-    </section>
-
-
-    <section class="sect sect--end">
-      <h2 class="sect__title sect__title--2">
-        Viens utiliser
-        le gestionnaire
-      </h2>
-      <p class="sect__txt">
-        Si la gestion et la vente de carte avec la mise en place d’un dispositif de sécurité pour toi l’acheteur ou bien
-        vendeur.
-        Tu as ta place pour venir rechercher des cartes et sauver tes collections.
-      </p>
-      <a href="" class="sect__link sect__link--big">Envie d'essayer&nbsp;<span>?</span> </a>
-    </section>
   </main>
 
   <footer class="foot">

@@ -1,7 +1,8 @@
 .sect {
     width: 100vw;
     padding: 0 9vw;
-
+    max-width: calc(1440px + 18vw);
+    margin:0 auto ; 
 
 
     &__txt {
@@ -12,6 +13,13 @@
         line-height: 160%;
         margin: 21px 0;
         max-width: 80ch;
+
+        &--italic{
+            font-style: italic;
+        }
+        &--bold{
+            font-weight: 600;
+        }
 
     }
 
@@ -140,5 +148,38 @@
 
     &--end{
         margin: 221px 0;
+    }
+}
+
+
+
+@media(min-width:1100px){
+    .sect{
+        &--bgGris {
+            padding: 153px 9vw;
+            background-color: $bgGris;
+            margin: 153px 0;
+            max-width: 100vw;
+    
+        }
+        &__txt{
+            font-size: 18px;
+            line-height: 180%;
+        }
+        &__title {
+            font-size: 51px;
+    
+            &--2 {
+                font-size: 38px;
+            }
+    
+            &--3 {
+                font-size: 28px;
+            }
+    
+            &--4 {
+                font-size: 21px;
+            }
+        }
     }
 }

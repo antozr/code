@@ -33,7 +33,7 @@
         border-radius: 5px;
         padding: 8px 0;
         background-color: $mauve;
-        font-family: "RobotoMono";
+        font-family: "basement";
         font-size: 16px;
         font-weight: 500;
         line-height: 80%;
@@ -48,4 +48,26 @@
         }
 
     }
+}
+
+
+@media(min-width: 900px){
+
+    .head{
+        position: fixed;
+        width: calc(100vw - 18vw);
+        padding: 2px 16px;
+        top: 8px;
+        left: 9vw;
+        z-index: 9999;
+        background-color: #ffffff;
+        &__nav{
+            position: relative;
+            width: 100vw;
+            border-top: 0px solid $mauve;
+            max-width: 460px;
+        }
+
+    }
+    
 }

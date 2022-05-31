@@ -2,32 +2,32 @@
 <html lang="fr">
 
 <head>
-  <title>CardChange / gestionnaire & echange de carte </title>
+  <title>Crédits / CardChange</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="icon" href="./assets/images/icon.ico" />
 
   <meta name="description"
-    content="Bienvenue dans la landing page de mon application de gestion de carte des différentes licences ainsi qu’une possibilité de les échanger pour voir les possibilités sur une carte. Et le petit plus, des conseils pour découvrir si tu as une vraie carte. 😄">
+    content="Bienvenu dans la page crédits avec les différents liens vers les ressources que j’ai utilisés dans ce projet.😄">
   <meta name="keywords" content="cardchange, cardChange, dbs, pokémon, anto_dev, landing page, tfa" />
   <meta name="author" content="anto__dev" />
   <meta name="copyright" content="propriétaire du copyright" />
 
   <!-- Meta Partage -->
   <!-- Twitter Card data -->
-  <meta name="twitter:card" content="Home Antodev👺">
+  <meta name="twitter:card" content="Crédits / CardChange">
   <meta name="twitter:site" content="http://antoni-dumont.be/">
   <meta name="twitter:creator" content="@AntoniDumont">
-  <meta name="twitter:title" content="CardChange / gestionnaire & echange de carte">
+  <meta name="twitter:title" content="Crédits / CardChange">
   <meta name="twitter:description"
-    content="Bienvenue dans la landing page de mon application de gestion de carte des différentes licences ainsi qu’une possibilité de les échanger pour voir les possibilités sur une carte. Et le petit plus, des conseils pour découvrir si tu as une vraie carte. 😄 ">
+    content="Bienvenu dans la page crédits avec les différents liens vers les ressources que j’ai utilisés dans ce projet.  ">
   <!-- Twitter summary card with large image must be at least 280x150px -->
   <meta name="twitter:image" content=" http://antoni-dumont.be/assets/images/partage.png">
   <!-- Open Graph data -->
-  <meta property="og:site_name" content="Home Antodev👺" />
-  <meta property="og:title" content="CardChange / gestionnaire & echange de carte" />
+  <meta property="og:site_name" content="Crédits / CardChange" />
+  <meta property="og:title" content="Crédits / CardChange" />
   <meta property="og:description"
-    content="Bienvenue dans la landing page de mon application de gestion de carte des différentes licences ainsi qu’une possibilité de les échanger pour voir les possibilités sur une carte. Et le petit plus, des conseils pour découvrir si tu as une vraie carte. 😄 " />
+    content="Bienvenu dans la page crédits avec les différents liens vers les ressources que j’ai utilisés dans ce projet.  " />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://antoni-dumont.be/ " />
   <meta property="og:image" content=" http:/antoni-dumont.be/assets/images/partage.png" />
@@ -45,15 +45,14 @@
 <body>
 
   <header class="head">
-    <p class="head__logo">
+    <a href="index.html" class="head__logo">
       CC
-    </p>
+    </a>
 
     <nav class="head__nav">
       <ul class="nav__list">
-        <li class="nav__el"><a href="#gestion" class="nav__lien">Le gestionnaire</a></li>
-        <li class="nav__el"><a href="#vendre" class="nav__lien">Vendre <span>?</span> </a></li>
-        <li class="nav__el"><a href="#securite" class="nav__lien">La sécurité</a></li>
+        <li class="nav__el"><a href="#fonts" class="nav__lien">Les fonts</a></li>
+        <li class="nav__el"><a href="#lib" class="nav__lien">Les librairie</a></li>
       </ul>
     </nav>
     <a href="#" class="head__link">
@@ -62,156 +61,31 @@
   </header>
 
   <main class="main">
-    <section class="sect sect--intro">
-      <div class="sect__boxImgInro">
-        <img src="./assets/images/min/pikaIntro.webp" alt="" srcset="./assets/images/min/pikaIntro@2x.webp""
-          class=" sect__imgIntro" loading="lazy">
-        <div class="sect__imgIntro sect__imgIntro--border">
-          <img src="./assets/images/min/pikaIntro.webp" alt="" srcset="./assets/images/min/pikaIntro@2x.webp"
-            class="sect__imgDiv" loading="lazy">
+    <section class="sect sect--credit">
+        <h1 class="sect__title credit__title--1">
+            Les crédits
+        </h1>
+        <div class="credit__box">
+          <div class="sect__anchor" id="fonts"></div>
+            <h2 class="sect__title sect__title--2 credit__title">
+                Voici les fonts utilisées : 
+            </h2>
+            <ul class="credit__list">
+                <li class="credit__el"><a href="https://fonts.google.com/specimen/Roboto+Mono?query=roboto" class="credit__link">-&nbsp;Roboto&nbsp;Mono</a></li>
+                <li class="credit__el"><a href="https://befonts.com/basement-grotesque-font.html" class="credit__link">-&nbsp;Basement&nbsp;Grotesque</a></li>
+            </ul>
         </div>
-        <img src="./assets/images/min/noctaIntro.webp" alt="" srcset="./assets/images/min/noctaIntro@2x.webp"
-          class="sect__imgIntro" loading="lazy">
-      </div>
-      <h1 class="sect__title">
-        Un gestionnaire porteur de conseils
-      </h1>
-      <p class="sect__txt">
-        Pour donner à chaque possesseur de carte, comme toi, une possibilité d’avoir toutes les licences au même
-        endroits.
-        On mise sur la confiance mais avec notre petit plus. 😉
-      </p>
-      <p class="sect__txt">
-        Découvre comment on te propose des solutions pour détecter les fausses cartes dans tes échanges.🔒
-      </p>
-    </section>
-
-    <section class="sect sect--bgGris">
-      <div class="sect__anchor" id="gestion"></div>
-      <div class="sect__boxContenut">
-        <h2 class="sect__title sect__title--2">
-          Voici un gestionnaire , simple et facile
-        </h2>
-        <p class="sect__txt">Comme tous collectionneurs, on aime savoir ce qu’on a dans notre inventaire en un simple
-          coup d’oeuil et surtout de pouvoir le consulter n’importe où, n’importe quand.</p>
-        <p class="sect__txt">C’est pourquoi, avec CardChange, tu peux rajouter tes cartes de tes licences entre les 5
-          plus grandes du marché.
-          En ayant un aperçus en un clin d’oeuil ainsi que l’ajout grâce à la photo de tes cartes. </p>
-
-        <div class="sect__imgBox" id="boxImgOne">
-          <img src="./assets/images/imgGestion.png"
-            alt="Une représentation de la phase de la gestion de l'application. "
-            srcset="./assets/images/imgGestion@2x.png" class="sect__img sect__img--anim" loading="lazy">
-
-        </div>
-        <a href="" class="sect__link">Envie d'essayer&nbsp;<span>?</span> </a>
-      </div>
-      <div class="sect__animText">
-        <div id="animTextBig">
-          <p class="sect__txt sect__txt--animBig">
-            Magic <span>-</span> Pokémon <span>-</span> DragonBall Card <span>-</span> Yu Gi Oh <span>-</span> World Of
-            Warcraft <span>-</span> Magic <span>-</span> Pokémon <span>-</span> DragonBall Card <span>-</span> Yu Gi Oh
-            <span>-</span> World Of Warcraft <span>-</span>
-          </p>
-        </div>
-      </div>
-
-      <div class="sect__boxContenut">
-        <div class="sect__anchor" id="vendre"></div>
-        <h2 class="sect__title sect__title--2">
-          Trop de cartes ?
-          Une envie précise ?
-        </h2>
-        <p class="sect__txt">
-          Tu les collectionnes, et comme toutes collection à un moment on manque de place. Et bien, pour remédier à ce
-          problème je peux te donner une solution. Te permettre de vendre tes cartes à d’autres collectionneurs près de
-          chez toi ou bien un peux plus loin. Simple et efficaces.
-        </p>
-        <h3 class="sect__title sect__title--3">
-          En acheter ?
-        </h3>
-        <p class="sect__txt">
-          La passion de tous les avoirs ou de récupérer la dernière carte qu’il te manque. Ainsi avec la map tu peux y
-          naviguer pour trouver ce que tu veux près de chez toi. Ou visiter le market pour acheter ta carte manquante.
-        </p>
-        <div class="sect__imgBox">
-          <img src="./assets/images/min/map.webp" alt="Une représentation de la phase de la gestion de l'application. "
-            srcset="./assets/images/min/map@2x.webp" class="sect__img" loading="lazy" />
-        </div>
-        <div class="sect__listTagMap">
-          <ul class="listTagMap">
-            <li class="listTagMap__el">
-              <p class="sect__title sect__title--4">
-                Marc
-              </p>
-              <p class="sect__txt">
-                Voir ces cartes
-                mise en ventes
-              </p>
-            </li>
-            <li class="listTagMap__el">
-              <p class="sect__title sect__title--4">
-                Marc
-              </p>
-              <p class="sect__txt">
-                Voir ces cartes
-                mise en ventes
-              </p>
-            </li>
-            <li class="listTagMap__el">
-              <p class="sect__title sect__title--4">
-                Marc
-              </p>
-              <p class="sect__txt">
-                Voir ces cartes
-                mise en ventes
-              </p>
-            </li>
+        <div class="credit__box">
+          <div class="sect__anchor" id="lib"></div>
+          <h2 class="sect__title sect__title--2 credit__title">
+              Voici les librairie utilisées : 
+          </h2>
+          <ul class="credit__list">
+              <li class="credit__el"><a href="https://greensock.com/" class="credit__link">-&nbsp;GSAP </a></li>
+              <li class="credit__el"><a href="https://github.com/dwmaj/workflow/archive/refs/heads/laravel-mix-6.zip" class="credit__link">-&nbsp;Workflow&nbsp;Laravel</a></li>
           </ul>
-        </div>
-        <a href="" class="sect__link">Envie d'essayer&nbsp;<span>?</span> </a>
       </div>
-    </section>
-
-    <!--section sur la sécurité retour bg blanc-->
-
-    <section class="sect sect--secu">
-      <div class="sect__anchor" id="securite"></div>
-      <h2 class="sect__title sect__title--2">
-        La sécurité notre priorité
-      </h2>
-      <p class="sect__txt">
-        Tu as peut-être déjà eu envie d’acheter des cartes en lignes, ou bien de faire des échanges avec des
-        particuliers, mais tu as eu des doutes avec la couleur, le nom sur la carte ou bien même l’image sur la carte.
-        Car le marché des fausses cartes et bel et bien présent chez nous et représentes une part du marché. Mais
-        comment toi tu peux faire pour ne pas tomber dans ces arnaques ?
-        Et bien CardChange te propose des conseils pour détecter une fausse cartes, avec des explications simples pour
-        détecter au plus vite la fraud
-
-
-
-      </p>
-      <div class="sect__imgBox">
-        <img src="./assets/images/min/imgGestion.webp"
-          alt="Une représentation de la phase de la gestion de l'application. "
-          srcset="./assets/images/min/imgGestion@2x.webp" class="sect__img" loading="lazy">
-
-      </div>
-      <a href="" class="sect__link">Envie d'essayer&nbsp;<span>?</span> </a>
-    </section>
-
-
-    <section class="sect sect--end">
-      <h2 class="sect__title sect__title--2">
-        Viens utiliser
-        le gestionnaire
-      </h2>
-      <p class="sect__txt">
-        Si la gestion et la vente de carte avec la mise en place d’un dispositif de sécurité pour toi l’acheteur ou bien
-        vendeur.
-        Tu as ta place pour venir rechercher des cartes et sauver tes collections.
-      </p>
-      <a href="" class="sect__link sect__link--big">Envie d'essayer&nbsp;<span>?</span> </a>
+      <div class="credit__yogi" ><iframe src="https://giphy.com/embed/FkKjdOhRVxP9wuWMrh" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/yugioh-yugi-yu-gi-oh-FkKjdOhRVxP9wuWMrh"></a></p>
     </section>
   </main>
 
