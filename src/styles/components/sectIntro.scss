@@ -1,11 +1,10 @@
+.sect {
+    &--intro {
 
-
-.sect{
-    &--intro{
         overflow-x: hidden;
     }
-    &__boxImgInro{
-        
+
+    &__boxImgInro {
         height: 390px;
         width: 340px;
         margin: 16px 0 0 5vw;
@@ -16,36 +15,37 @@
 
     }
 
-    &__imgIntro{
+    &__imgIntro {
         width: 104px;
         height: 129px;
         position: relative;
         display: block;
         top: 20px;
-        left:8vw;
-        &:nth-child(2){
+        left: 8vw;
+
+        &:nth-child(2) {
             width: 222px;
             height: 294px;
             position: relative;
             top: -68px;
-            left:18vw
-
+            left: 18vw
         }
-        &:nth-child(3){
+
+        &:nth-child(3) {
             width: 149px;
             height: 202px;
             position: relative;
             top: -230px;
-            left:55vw
+            left: 55vw
         }
 
-        &--border{
-            &::after{
-                content: "" ;
+        &--border {
+            &::after {
+                content: "";
                 display: block;
                 width: 242px;
                 height: 314px;
-                background-color: transparent; 
+                background-color: transparent;
                 border-radius: 20px;
                 position: relative;
                 top: -299px;
@@ -53,12 +53,13 @@
                 border: 2px solid #984EFA30;
 
             }
-            &::before{
-                content: "" ;
+
+            &::before {
+                content: "";
                 display: block;
                 width: 218px;
                 height: 294px;
-                background-color: transparent; 
+                background-color: transparent;
                 border-radius: 10px;
                 position: absolute;
                 top: -9px;
@@ -68,22 +69,106 @@
             }
         }
     }
-    &__imgDiv{
+
+    &__imgDiv {
         width: calc(100% - 20px);
         height: calc(100% - 20px);
-        
+
     }
 }
 
 
 
-@media(min-width: 900px){
+@media(min-width: 900px) {
 
-    .sect{
-        &--intro{
-            overflow-x: hidden;
-            margin: 260px auto;
+    .sect {
+        &--intro {
+            width: 100vw;
+            max-width: 100vw;
+            //height: 780px;
+            height: 950px;
+            //height: 1050px;
+            margin:  91px 0;
+            padding: 0 9vw;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
         }
-    
+
+        &__boxIntro {
+            flex: 6;
+            max-width: 690px;
+        }
+
+        /// les images 
+        &__imgIntro {
+            width: 221px;
+            height: 307px;
+            top: -188px;
+            left: -6vw;
+
+            &:nth-child(2) {
+                width: 438px;
+                min-width: 438px;
+                height: 609px;
+                min-height: 609px;
+                top: -400px;
+                left: 2vw
+            }
+
+            &:nth-child(3) {
+                width: 221px;
+                height: 307px;
+                top: -530px;
+                left: 22vw
+            }
+
+            &--border {
+                &::after {
+                    width: 497px;
+                    height: 659px;
+                    position: absolute;
+                    top: -38px;
+                    left: -38px;
+
+                }
+
+                &::before {
+                    width: 462px;
+                    height: 626px;
+                    position: absolute;
+                    top: -22px;
+                    left: -22px;
+
+
+                }
+            }
+        }
+
     }
- }
+}
+
+
+// .t1 {
+//     grid-area: t1;
+//     margin: 0 0 51px 0;
+// }
+
+// .p1 {
+//     grid-area: p1;
+//     margin: 18px 0;
+// }
+// .l1 {
+//     grid-area: l1;
+//     margin: 38px 0 0 0 ;
+// }
+
+// .p2 {
+//     grid-area: p2;
+//     margin: 18px 0;
+// }
+
+// .im {
+//     grid-area: im;
+// }
