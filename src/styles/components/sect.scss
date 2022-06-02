@@ -16,11 +16,14 @@
 
         &--italic {
             font-style: italic;
+            font-weight: 600;
         }
 
         &--bold {
             font-weight: 600;
         }
+
+       
 
     }
 
@@ -289,9 +292,10 @@
                     "t2 t2 t2 t2 t2  . im im im b1 b1 b1"
                     "p2 p2 p2 p2 p2  . im im im b1 b1 b1"
                     "l1 l1 l1 l1 l1  . im im im b1 b1 b1";
-                    align-items: center;
+                align-items: center;
             }
         }
+
         &__listTagMap {
             width: 360px;
             height: 328px;
@@ -308,6 +312,7 @@
     grid-area: t1;
     margin: 0 0 51px 0;
 }
+
 .t2 {
     grid-area: t2;
     margin: 21px 0 38px 0;
@@ -322,6 +327,7 @@
     grid-area: l1;
     margin: 38px 0 0 0;
 }
+
 .b1 {
     grid-area: b1;
     //margin: 38px 0 0 0;

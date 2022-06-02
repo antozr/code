@@ -17,4 +17,48 @@
     &__linkGif{
         color: transparent;
     }
+    &__link{
+        color: #8c39f9;
+       
+        transition: 0.3s;
+
+        &:hover{
+            color: #452370;
+            text-decoration:underline;
+            transition: 0.3s;
+        }
+    }
+}
+
+
+
+@media(min-width: 900px){
+
+
+    .case {
+        &__grid{
+
+            max-width: calc(1440px + 18vw);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 50px 320px 330px 220px 350px;
+            column-gap: 21px;
+            row-gap: 8px;
+            grid-template-areas:
+                "t1 t1 t1 t1 t1 t1 t1 . .  .  .  . "
+                "p1 p1 p1 p1 p1 p1 . im im im im im"
+                "l1 l1 l1 l1 l1 l1 . im im im im im"
+                "p2 p2 p2 p2 p2 p2 . im im im im im"
+                "b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1";
+        }
+
+        &__box{
+
+            flex-wrap: nowrap;
+            &>p{
+                max-width: 50ch;
+            }
+        }
+    }
 }

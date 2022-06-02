@@ -59,3 +59,43 @@
         text-align: center;
     }
 }
+
+
+@media(min-width:900px){
+    .foot{
+        
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 180px 84px;
+        column-gap: 21px;
+        row-gap: 51px;
+        grid-template-areas:
+            "t1 t1 t1 t1 t1 t1 .   .  im im im im"
+            "t1 t1 t1 t1 t1 t1 .   .  im im im im"
+            " . .  .  l1 l1 l1 l1 l1 .  .  .  . ";
+        &__list{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+           
+    
+    
+            &--pseudo{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 320px;
+    
+               
+            }
+        }
+        &__date{
+            text-align: center;
+            
+        }
+        &__box{
+            margin: 91px 0;
+        }
+    }
+}

@@ -14,4 +14,28 @@
 
 main{
     overflow-x: hidden;
+
+}
+
+p, h1, h2, h3, h4, b, i{
+    &::-moz-selection {
+        color: #f1f1f1;
+        background-color: #8c39f9;
+    }
+
+    &::selection {
+        color: #f1f1f1;
+        background-color: #8c39f9;
+    }
+}
+a{
+    &::-moz-selection {
+        color: #8c39f9;
+        background-color: #f1f1f1;
+    }
+
+    &::selection {
+        color: #8c39f9;
+        background-color: #f1f1f1;
+    }
 }

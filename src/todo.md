@@ -3,7 +3,7 @@
 # Todo List pour la Landing
 
 
-- Faire le responsive 
+- Faire le responsive 🆗
 - Faire des animations au scroll sur les images 
 - Animation sur le heroes banner 
 - Faire une animation pour le hover des liens 🆗
