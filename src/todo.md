@@ -6,9 +6,9 @@
 - Faire le responsive 
 - Faire des animations au scroll sur les images 
 - Animation sur le heroes banner 
-- Faire une animation pour le hover des liens 
+- Faire une animation pour le hover des liens 🆗
 - Faire une animation gsap avec les boxes sous la map 🆗 :low_brightness:
-- Mise en place d'une grille pour la version pc 
+- Mise en place d'une grille pour la version pc 🆗
 
 
 # Todo List pour le Case Sstudy

@@ -109,7 +109,7 @@
             left: 0px;
 
             border: 2px solid #984EFA30;
-            transform: translate(17%);
+            //transform: translate(17%);
 
         }
 
@@ -185,24 +185,121 @@
             }
         }
 
-        &__boxContenut {
+        &__boxContenut {}
 
+        &__link {
+            width: 290px;
+            font-size: 21px;
+            padding: 16px 28px;
+            margin: 28px auto;
+            display: flex;
+            justify-content: center;
+            transition: 0.3s;
 
-           
+            &:hover {
+                background-color: $mauve;
+                transition: 0.3s;
+                font-weight: 400;
+
+                &>span {
+                    color: #fff;
+                }
+            }
+
+            &--big {
+                width: 100vw;
+                max-width: 490px;
+                margin: 28px 0 28px -9vw;
+
+            }
         }
-        &__grid{
+
+        &__imgBox {
+            height: 420px;
+            width: 320px;
+            position: relative;
+            margin: 57px 0;
+            display: flex;
+            justify-content: center;
+
+            &>img {
+                width: 250px;
+                height: 100%;
+
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                width: 246px;
+                height: 461px;
+                background-color: transparent;
+                border-radius: 30px;
+                position: relative;
+                top: -20px;
+                left: 0px;
+
+                border: 2px solid #984EFA30;
+                //transform: translate(17%);
+
+            }
+
+            &::before {
+                content: "";
+                display: block;
+                width: 212px;
+                height: 438px;
+                background-color: transparent;
+                border-radius: 20px;
+                position: relative;
+                top: -10px;
+                left: 17px;
+                border: 2px solid #984EFA60;
+                transform: translate(0%);
+
+
+            }
+
+        }
+
+        &__grid {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: 140px 250px  90px;
+            grid-template-rows: 140px 250px 90px;
             column-gap: 21px;
             grid-template-areas:
-            "t1 t1 t1 t1 t1 .  . im im im im im" 
-            "p1 p1 p1 p1 p1 p1 . im im im im im"  
-            "l1 l1 l1 l1 l1 l1 . im im im im im" ;
+                "t1 t1 t1 t1 t1 t1 t1 im im im im im"
+                "p1 p1 p1 p1 p1 p1 . im im im im im"
+                "l1 l1 l1 l1 l1 l1 . im im im im im";
 
-            &--big{
-                grid-template-rows: 140px 350px  90px;
+            &--big {
+                grid-template-rows: 140px 350px 90px;
             }
+
+            &--small {
+                grid-template-rows: 90px 128px 90px;
+
+            }
+
+            &--map {
+                grid-template-rows: 120px 286px 90px 228px 90px;
+                grid-template-areas:
+                    "t1 t1 t1 t1 t1 t1 t1 t1 t1 t1 .  . "
+                    "p1 p1 p1 p1 p1  . im im im b1 b1 b1"
+                    "t2 t2 t2 t2 t2  . im im im b1 b1 b1"
+                    "p2 p2 p2 p2 p2  . im im im b1 b1 b1"
+                    "l1 l1 l1 l1 l1  . im im im b1 b1 b1";
+                    align-items: center;
+            }
+        }
+        &__listTagMap {
+            width: 360px;
+            height: 328px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            //margin: 28px 0 28px 0vw;
+            margin: 0;
         }
     }
 }
@@ -211,14 +308,23 @@
     grid-area: t1;
     margin: 0 0 51px 0;
 }
+.t2 {
+    grid-area: t2;
+    margin: 21px 0 38px 0;
+}
 
 .p1 {
     grid-area: p1;
-    margin:  0;
+    margin: 0;
 }
+
 .l1 {
     grid-area: l1;
-    margin: 38px 0 0 0 ;
+    margin: 38px 0 0 0;
+}
+.b1 {
+    grid-area: b1;
+    //margin: 38px 0 0 0;
 }
 
 .p2 {
