@@ -40,6 +40,7 @@
   <link rel="stylesheet" href="styles/app.css">
 
   <script src="scripts/app.js" defer></script>
+  <script src="scripts/caseSlider.js" defer></script>
 </head>
 
 <body>
@@ -65,13 +66,13 @@
   <main class="main">
     <section class="sect sect--intro ">
       <div class="sect__boxImgInro im">
-        <img src="./assets/images/min/pikaIntro.webp" alt="" srcset="./assets/images/min/pikaIntro@2x.webp""
+        <img src="./assets/images/min/pikaIntro.webp" alt="Image de pokémon pour l'introduction de mon case study. " srcset="./assets/images/min/pikaIntro@2x.webp""
           class=" sect__imgIntro" loading="lazy">
         <div class="sect__imgIntro sect__imgIntro--border">
-          <img src="./assets/images/min/pikaIntro.webp" alt="" srcset="./assets/images/min/pikaIntro@2x.webp"
+          <img src="./assets/images/min/pikaIntro.webp" alt="Image de pokémon pour l'introduction de mon case study. " srcset="./assets/images/min/pikaIntro@2x.webp"
             class="sect__imgDiv" loading="lazy">
         </div>
-        <img src="./assets/images/min/noctaIntro.webp" alt="" srcset="./assets/images/min/noctaIntro@2x.webp"
+        <img src="./assets/images/min/noctaIntro.webp" alt="Image de pokémon pour l'introduction de mon case study. " srcset="./assets/images/min/noctaIntro@2x.webp"
           class="sect__imgIntro" loading="lazy">
       </div>
       <div class="sect__boxIntro">
@@ -179,7 +180,7 @@
           </p>
         </div>
       </div>
-      <div class="case__contenutGris">
+      <div class="case__contenutGris case__grid case__grid--small">
         <div class="sect__anchor" id="mvp"></div>
         <h2 class="sect__title sect__title--2 t1">
           Ma réponse, un MVP
@@ -198,7 +199,7 @@
           de là on peut ajouter le nombres qu’on veut. Ce qui ralentit l’utilisateur dans ses actions et puis lui couper
           l’envie de continuer .
         </p>
-        <p class="sect__txt p2">
+        <p class="sect__txt l1">
           Comme applications mobile on retrouve aussi <a href="https://www.urzagatherer.app/" class="case__link" target="_blank">UrzaGathere</a> , une application de gestion et de mini compteur de
           vie pour les parties de jeu Magic. Cette application à plusieurs défauts au niveau de son UX, on peut commence
           par la navigation qui est … un peu compliquer, car on se retrouve avec une navigation changeante, et immense
@@ -211,7 +212,7 @@
           identité graphique qui s’en dégage, il est monotone voir un peu ennuyeux par son design pas toujours intuitif
           ainsi qu’impersonnelle.
         </p>
-        <p class="sect__txt sect__txt--italic">
+        <p class="sect__txt sect__txt--italic p2">
           <b>Conclusion :</b> il y a une multitude de gestionnaires de cartes mais pas / peut qui font du multi-licence, ainsi
           je peux marquer ma différence sur ce point précis, mais on a pu voir que chaque site / application à son
           propre design et univers, soit il va suivre celui de sa licence ou bien partir dans une direction complètement
@@ -219,13 +220,25 @@
           pas faire pour avoir une chance d’être utilisé.
         </p>
         <!-- slider images concurents  -->
-        <div class="case__slider">
+        <div class="case__slider im">
           <ul class="case__listSlider">
-            <li class="case__elSlider"><img src="" alt="" class="case__imgSlider"></li>
-            <li class="case__elSlider"><img src="" alt="" class="case__imgSlider"></li>
+            <li class="case__elSlider">
+              <img src="./assets/images/min/dbs.webp" alt="Image de présentation de concurent à mon projet CardChange." srcset="./assets/images/min/dbs@2x.webp"
+              class=" case__imgSlider" loading="lazy">
+              <p class="case__labelImg">
+                DbsCard mobile version
+              </p>
+            </li>
+            <li class="case__elSlider case__elSlider--none">
+              <img src="./assets/images/min/urzagat.webp" alt="Image de présentation de concurent à mon projet CardChange." srcset="./assets/images/min/urzagat@2x.webp"
+              class=" case__imgSlider" loading="lazy">
+              <p class="case__labelImg">
+                UrzaGathere&nbsp;mobile&nbsp;version
+              </p>
+            </li>
           </ul>
           <ul class="case__sliderBtn">
-            <li class="case__liBtn"></li>
+            <li class="case__liBtn case__liBtn--actif"></li>
             <li class="case__liBtn"></li>
           </ul>
         </div>

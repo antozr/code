@@ -28,6 +28,79 @@
             transition: 0.3s;
         }
     }
+
+    &__slider{
+        width: 100%;
+        height: 90vh;
+        max-height: 540px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__listSlider{
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+        width: 100%;
+        max-width: 390px;
+
+        &>li{
+            width: 100%;
+            height: 100%;
+            
+        }
+
+    }
+    &__elSlider{
+
+        &--none{
+            display: none;
+        }
+
+        margin: 2px solid $mauve ;
+    }
+    &__imgSlider{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: 2px solid $mauve ;
+        border-radius: 10px;
+
+
+    }
+    &__sliderBtn{
+        display: flex;
+        flex-direction: row;
+        width: 120px;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    &__liBtn{
+        width: 30px;
+        height: 15px;
+        border-radius: 5px;
+        border: 1px solid $mauve;
+        background-color: #fff;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &--actif{
+            width: 60px;
+            border: none;
+            background-color: $mauve;
+            transition: 0.3s;
+        }
+        
+    }
+    &__labelImg{
+        font-family: "basement";
+        transform:translateX(54%) translateY(-200px) rotate(90deg);
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 90%;
+        color: #000;
+    }
 }
 
 
@@ -51,6 +124,20 @@
                 "l1 l1 l1 l1 l1 l1 . im im im im im"
                 "p2 p2 p2 p2 p2 p2 . im im im im im"
                 "b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1";
+
+                &--small{
+                    grid-template-rows: 80px 600px 780px ;
+                    grid-template-areas:
+                    "t1 t1 t1 t1 t1 t1 t1 . .  .  .  . "
+                    "p1 p1 p1 p1 p1 p1 p1 p1 .  im im im "
+                    "l1 l1 l1 l1 l1 l1 .  p2 p2 p2 p2 p2"
+                    ;
+                    row-gap: 28px;
+
+                    &>p{
+                        margin: 0;
+                    }
+                }
         }
 
         &__box{
