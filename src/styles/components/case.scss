@@ -138,6 +138,22 @@
                         margin: 0;
                     }
                 }
+
+                &--big{
+                    grid-template-rows: 130px 530px 190px 680px 610px;
+                    grid-template-areas:
+                    "t1 t1 t1 t1 t1 t1 t1 . .  .  .  . "
+                    "p1 p1 p1 p1 p1 p1 . im im im im im"
+                    "l1 l1 l1 l1 l1 l1 . im im im im im"
+                    "p2 p2 p2 p2 p2 p2 p2 p2 p2 .  .  ."
+                    "b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1";
+                }
+                &--auto{
+                    grid-template-rows:auto;
+                }
+                &--marge{
+                    margin:120px auto;
+                }
         }
 
         &__box{
