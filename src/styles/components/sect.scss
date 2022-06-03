@@ -73,7 +73,7 @@
         }
 
         &--big {
-            width: 100vw;
+            width: calc(100vw - 18vw);
             margin: 28px 0 28px -9vw;
 
         }
@@ -153,6 +153,9 @@
     &--end {
         margin: 221px 0;
     }
+    &__case{
+        margin: 122px 0;
+    }
 }
 
 
@@ -172,6 +175,7 @@
             font-size: 18px;
             line-height: 180%;
         }
+
 
         &__title {
             font-size: 51px;

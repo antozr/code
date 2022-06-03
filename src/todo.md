@@ -7,18 +7,18 @@
 - Faire des animations au scroll sur les images 
 - Animation sur le heroes banner 
 - Faire une animation pour le hover des liens 🆗
-- Faire une animation gsap avec les boxes sous la map 🆗 :low_brightness:
+- Faire une animation gsap avec les boxes sous la map 🆗 
 - Mise en place d'une grille pour la version pc 🆗
 
 
 # Todo List pour le Case Sstudy
 
-- Faire le texte 
+- Faire le texte 🆗
 - Choisir les images 
-- Faire l'intégration
-- Faire un design  de grille simple 
-- Responsive 
-- Nav contextuelle animée 
+- Faire l'intégration 🆗
+- Faire un design  de grille simple 🆗
+- Responsive 🆗
+- Nav contextuelle animée // on oublie 
 
 # Todo List pour la page Crédit 
 
