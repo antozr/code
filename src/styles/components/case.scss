@@ -19,6 +19,10 @@
     }
     &__gif{
         border-radius: 10px;
+        width: 100%;
+        position: relative;
+        padding-top: 16px;
+        padding-bottom:106%;
     }
     &__link{
         color: #8c39f9;
