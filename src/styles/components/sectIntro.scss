@@ -51,6 +51,7 @@
                 top: -299px;
                 left: -21px;
                 border: 2px solid #984EFA30;
+                animation: animationSpam 8s infinite;
 
             }
 
@@ -77,6 +78,32 @@
     }
 }
 
+@keyframes animationSpam {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0.2;
+        transform: scale(0.8);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    70%{
+        opacity: 0.6;
+        transform: scale(1);
+    }
+    80%{
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(0);
+    }
+
+}
 
 
 @media(min-width: 900px) {

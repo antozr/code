@@ -50,13 +50,15 @@
       CC
     </a>
 
-    <nav class="head__nav">
-      <ul class="nav__list">
-        <li class="nav__el"><a href="#idee" class="nav__lien">L'idée </a></li>
-        <li class="nav__el"><a href="#reponse" class="nav__lien">Réponse <span>?</span> </a></li>
-        <li class="nav__el"><a href="#mvp" class="nav__lien">Le MVP</a></li>
-        <li class="nav__el"><a href="#test" class="nav__lien">Les tests</a></li>
-        <li class="nav__el"><a href="#futur" class="nav__lien">Le futur</a></li>
+    <nav class="head__nav ">
+      <button class="nav__btn">Le menu</button>
+      <ul class="nav__list nav__list--case">
+        <li class="nav__el"><a href="#idee" class="nav__lien  nav__lien--case">L'idée </a></li>
+        <li class="nav__el"><a href="#reponse" class="nav__lien  nav__lien--case">Réponse <span>?</span> </a></li>
+        <li class="nav__el"><a href="#mvp" class="nav__lien  nav__lien--case">Le MVP</a></li>
+        <li class="nav__el"><a href="#test" class="nav__lien  nav__lien--case">Les tests</a></li>
+        <li class="nav__el"><a href="#futur" class="nav__lien nav__lien--case">Le futur</a></li>
+        <li class="nav__el"><a href="#conclu" class="nav__lien nav__lien--case">Conclusion</a></li>
       </ul>
     </nav>
     <a href="https://www.figma.com/proto/vBLF8msOFBbraschVgTjWk/MVP__2022__00?page-id=752%3A539&node-id=752%3A4570&viewport=2057%2C1134%2C0.21&scaling=scale-down&starting-point-node-id=752%3A4570&show-proto-sidebar=1"
@@ -70,13 +72,13 @@
       <div class="sect__boxImgInro im">
         <img src="./assets/images/min/pikaIntro.webp" alt="Image de pokémon pour l'introduction de mon case study. "
           srcset="./assets/images/min/pikaIntro@2x.webp"
-          class=" sect__imgIntro" loading="lazy">
+          class=" sect__imgIntro" loading="lazy" id="imgIntro01">
         <div class="sect__imgIntro sect__imgIntro--border">
           <img src="./assets/images/min/pikaIntro.webp" alt="Image de pokémon pour l'introduction de mon case study. "
             srcset="./assets/images/min/pikaIntro@2x.webp" class="sect__imgDiv" loading="lazy">
         </div>
         <img src="./assets/images/min/noctaIntro.webp" alt="Image de pokémon pour l'introduction de mon case study. "
-          srcset="./assets/images/min/noctaIntro@2x.webp" class="sect__imgIntro" loading="lazy">
+          srcset="./assets/images/min/noctaIntro@2x.webp" class="sect__imgIntro" loading="lazy" id="imgIntro02">
       </div>
       <div class="sect__boxIntro">
         <h1 class="sect__title t1">
@@ -275,6 +277,38 @@
           évolution dans le design de mon prototype et il va sûrement encore en avori dans le futur pour les nouvelles
           fonctionnalités .
         </p> -->
+        <div class="case__slider case__slider--big  im">
+          <ul class="case__listSlider case__listSlider--big ">
+            <li class="case__elSlider  case__elSlider--none">
+              <img src="./assets/images/min/gest.webp" alt="Image de présentation de concurent à mon projet CardChange."
+                srcset="./assets/images/min/gest@2x.webp" class=" case__imgSlider" loading="lazy">
+              <p class="case__labelImg">
+                Gestionnaire&nbsp;version&nbsp;finale
+              </p>
+            </li>
+            <li class="case__elSlider">
+              <img src="./assets/images/min/map.webp"
+                alt="Image de présentation de concurent à mon projet CardChange."
+                srcset="./assets/images/min/map@2x.webp" class=" case__imgSlider" loading="lazy">
+              <p class="case__labelImg">
+                Carte&nbsp;pour&nbsp;les&nbsp;échanges
+              </p>
+            </li>
+            <li class="case__elSlider">
+              <img src="./assets/images/min/conseil3.webp"
+                alt="Image de présentation de concurent à mon projet CardChange."
+                srcset="./assets/images/min/conseil3@2x.webp" class=" case__imgSlider" loading="lazy">
+              <p class="case__labelImg">
+                Conseil&nbsp;prévention
+              </p>
+            </li>
+          </ul>
+          <ul class="case__sliderBtn case__sliderBtn--big">
+            <li class="case__liBtn case__liBtn--actif"></li>
+            <li class="case__liBtn"></li>
+            <li class="case__liBtn"></li>
+          </ul>
+        </div>
         <p class="sect__txt sect__txt--italic  l1">
           Ma première version de mon application voyait le jour mais un problème survenait c’est que je devais explorer
           ce
@@ -344,7 +378,7 @@
       </p>
       <p class="sect__txt l1">
         Ainsi avec mon prototype fini je suis parti voir mes utilisateurs, pour avoir un avis sur mon application. Mais
-        avant je me suis lancé dans l’exercice de faire plusieurs User Journey, pour voir si avec des handicaps, dans
+        avant je me suis lancé dans l’exercice de faire plusieurs <a href="./assets/pdf/userJourney.pdf" class="case__link">User Journey</a> , pour voir si avec des handicaps, dans
         des situations complexes il est possible pour l’utilisateur de faire fonctionner l’app et donc de le voir
         l’utiliser le plus souvent possible. Vous pouvez les voir ICI , et en gros il est possible de l’utiliser dans la
         plupart des cas sauf dans les transports en commun ( surtout les bus) où il est plus compliqué pour la personne

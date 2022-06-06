@@ -1,30 +1,66 @@
+.nav {
 
-.nav{
-
-    &__list{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 5vw;
-            width: 100%;
-            height: 60px;
-            background-color: $bgGris;
+    &__btn{
+        width: 100%;
+        height: 60px;
+        border: none;
+        font-family: "basement";
+        font-size: 16px;
+        font-weight: 600;
+        color: $text;
+        text-align: center;
     }
 
-    &__el{
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5vw;
+       // width: 100%;
+        height: 60px;
+        background-color: $bgGris;
+
+        &--case {
+            height: 60vh;
+            max-height: 340px;
+            display: none;
+            flex-wrap: wrap;
+            padding: 28px 0;
+            &>li {
+                padding: 0 16px;
+                width: 100%;
+                text-align: center;
+                &>a{
+                    display: inline-block;
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        &--open{
+            display: flex;
+        }
+    }
+
+    &__el {
         width: auto;
         height: 22px;
-        &--actif{
+        margin: 0 2vw;
+
+        &--actif {
             border-bottom: 1px solid $mauve;
             transition: 0.3s;
-            & > a {
+
+            &>a {
                 font-weight: 800;
                 letter-spacing: -0em;
             }
         }
     }
-    &__lien{
+
+    &__lien {
         font-family: "RobotoMono";
         font-size: 16px;
         font-weight: 300;
@@ -32,21 +68,23 @@
         letter-spacing: -0.1em;
         transition: 0.3s;
         scroll-behavior: smooth;
-        & > span {
+
+        &>span {
             color: $mauve;
         }
-        &:hover{
+
+        &:hover {
             font-weight: 200;
-            color: #00000060;
+            color: rgb(0 0 0 / 61%);
             transition: 0.3s;
         }
     }
 }
 
 
-.sect{
+.sect {
 
-    &__anchor{
+    &__anchor {
         display: block;
         width: 10px;
         height: 10px;
@@ -60,13 +98,26 @@
 
 
 
-@media(min-width: 900px){
+@media(min-width: 900px) {
 
-   .nav{
-    &__list{
-        padding: 0 ;
-        background-color: transparent;
-}
-   }
-    
+    .nav {
+        &__btn{
+            display: none;
+        }
+
+        &__list {
+            padding: 0;
+            background-color: transparent;
+
+            &--case {
+                height: 60px;
+                display: flex;
+                flex-wrap: nowrap;
+                &>li {
+                    padding: 0px;
+                }
+            }
+        }
+    }
+
 }
